@@ -14,6 +14,9 @@
 		5E97D42D1DF7693000136369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E97D42B1DF7693000136369 /* LaunchScreen.storyboard */; };
 		5E97D4381DF7693000136369 /* SquoirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97D4371DF7693000136369 /* SquoirTests.swift */; };
 		5E97D4431DF7693000136369 /* SquoirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97D4421DF7693000136369 /* SquoirUITests.swift */; };
+		5E97D4671DF76AC600136369 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E97D4641DF76AB000136369 /* GPUImage.framework */; };
+		5E97D4691DF76ADA00136369 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E97D4641DF76AB000136369 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5EBC5AAA1DFCA73300ABB88A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBC5AA91DFCA73300ABB88A /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,41 @@
 			remoteGlobalIDString = 5E97D41E1DF7693000136369;
 			remoteInfo = Squoir;
 		};
+		5E97D4611DF76AB000136369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E97D45B1DF76AB000136369 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		5E97D4631DF76AB000136369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E97D45B1DF76AB000136369 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE209E51943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+		5E97D4651DF76AB600136369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E97D45B1DF76AB000136369 /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE209E41943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E97D4681DF76ACD00136369 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5E97D4691DF76ADA00136369 /* GPUImage.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5E97D41F1DF7693000136369 /* Squoir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squoir.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +84,8 @@
 		5E97D43E1DF7693000136369 /* SquoirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquoirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E97D4421DF7693000136369 /* SquoirUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquoirUITests.swift; sourceTree = "<group>"; };
 		5E97D4441DF7693000136369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E97D45B1DF76AB000136369 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "../../../../Downloads/GPUImage-master-5/framework/GPUImage.xcodeproj"; sourceTree = "<group>"; };
+		5EBC5AA91DFCA73300ABB88A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E97D4671DF76AC600136369 /* GPUImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +117,7 @@
 		5E97D4161DF7692F00136369 = {
 			isa = PBXGroup;
 			children = (
+				5E97D45B1DF76AB000136369 /* GPUImage.xcodeproj */,
 				5E97D4211DF7693000136369 /* Squoir */,
 				5E97D4361DF7693000136369 /* SquoirTests */,
 				5E97D4411DF7693000136369 /* SquoirUITests */,
@@ -120,9 +161,19 @@
 			isa = PBXGroup;
 			children = (
 				5E97D4421DF7693000136369 /* SquoirUITests.swift */,
+				5EBC5AA91DFCA73300ABB88A /* SnapshotHelper.swift */,
 				5E97D4441DF7693000136369 /* Info.plist */,
 			);
 			path = SquoirUITests;
+			sourceTree = "<group>";
+		};
+		5E97D45C1DF76AB000136369 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E97D4621DF76AB000136369 /* libGPUImage.a */,
+				5E97D4641DF76AB000136369 /* GPUImage.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,10 +186,12 @@
 				5E97D41B1DF7693000136369 /* Sources */,
 				5E97D41C1DF7693000136369 /* Frameworks */,
 				5E97D41D1DF7693000136369 /* Resources */,
+				5E97D4681DF76ACD00136369 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5E97D4661DF76AB600136369 /* PBXTargetDependency */,
 			);
 			name = Squoir;
 			productName = Squoir;
@@ -221,6 +274,12 @@
 			mainGroup = 5E97D4161DF7692F00136369;
 			productRefGroup = 5E97D4201DF7693000136369 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5E97D45C1DF76AB000136369 /* Products */;
+					ProjectRef = 5E97D45B1DF76AB000136369 /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5E97D41E1DF7693000136369 /* Squoir */,
@@ -229,6 +288,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5E97D4621DF76AB000136369 /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = 5E97D4611DF76AB000136369 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5E97D4641DF76AB000136369 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 5E97D4631DF76AB000136369 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5E97D41D1DF7693000136369 /* Resources */ = {
@@ -280,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E97D4431DF7693000136369 /* SquoirUITests.swift in Sources */,
+				5EBC5AAA1DFCA73300ABB88A /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +372,11 @@
 			isa = PBXTargetDependency;
 			target = 5E97D41E1DF7693000136369 /* Squoir */;
 			targetProxy = 5E97D43F1DF7693000136369 /* PBXContainerItemProxy */;
+		};
+		5E97D4661DF76AB600136369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImageFramework;
+			targetProxy = 5E97D4651DF76AB600136369 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -358,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -415,12 +497,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = A96T689RCU;
 				INFOPLIST_FILE = Squoir/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Arlix.Squoir;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Arlix.Squoir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -428,12 +513,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = A96T689RCU;
 				INFOPLIST_FILE = Squoir/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Arlix.Squoir;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Arlix.Squoir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -514,6 +602,7 @@
 				5E97D4491DF7693000136369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E97D44A1DF7693000136369 /* Build configuration list for PBXNativeTarget "SquoirTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +611,7 @@
 				5E97D44C1DF7693000136369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E97D44D1DF7693000136369 /* Build configuration list for PBXNativeTarget "SquoirUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +620,7 @@
 				5E97D44F1DF7693000136369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
